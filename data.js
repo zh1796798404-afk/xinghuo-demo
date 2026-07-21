@@ -1,6 +1,6 @@
 /* 星火平台 Demo — 模拟数据（对应 PRD 第 5 章数据模型） */
 window.SEED = {
-  user: { name: "张浩", open_id: "ou_demo_zhanghao", dept: "产品中心-体验设计部", avatar: "🧑‍💻", avatarImg: "avatars/zhanghao.jpg" },
+  user: { name: "小李", open_id: "ou_demo_xiaoli", dept: "产品中心-体验设计部", avatar: "🧑‍💻", avatarImg: "avatars/xiaoli.jpg" },
 
   tools: [
     { id: 1, av: "avatars/chenxiao.jpg", rate: 4.9, g: ["#FF9500","#FF5E3A"], ic: "receipt-text", name: "发票信息提取工具", type: "网页应用", agent: false,
@@ -25,10 +25,10 @@ window.SEED = {
       tags: ["文件批处理", "素材管理"], owner: "林小婉", dept: "市场部", date: "2026-07-05",
       env: "零依赖，浏览器双击即用", source: "平台手动上传", status: "已上架",
       reuse: 91, likes: 27, favs: 12, comments: [] },
-    { id: 4, av: "avatars/zhanghao.jpg", rate: 4.6, g: ["#AF52DE","#5856D6"], ic: "chart-line", name: "竞品价格监控 Skill", type: "Skill", agent: true,
+    { id: 4, av: "avatars/xiaoli.jpg", rate: 4.6, g: ["#AF52DE","#5856D6"], ic: "chart-line", name: "竞品价格监控 Skill", type: "Skill", agent: true,
       desc: "每天自动检索主要竞品的电商价格与促销变化，输出对比表格，替代人工逐站巡查。",
       usage: "第一步：把 skill 文件夹拷贝到 ~/.claude/skills/；第二步：新开会话输入 /price-watch；第三步：按提示配置竞品清单。",
-      tags: ["信息检索", "电商", "竞品"], owner: "张浩", dept: "产品中心-体验设计部", date: "2026-07-01",
+      tags: ["信息检索", "电商", "竞品"], owner: "小李", dept: "产品中心-体验设计部", date: "2026-07-01",
       env: "需 agent 环境（Codex / Claude Code）", source: "教练制作回流", status: "已上架",
       reuse: 77, likes: 31, favs: 19, comments: [] },
     { id: 5, av: "avatars/emmawu.jpg", rate: 4.8, g: ["#34C759","#30B0C7"], ic: "languages", name: "英文文案润色 Skill", type: "Skill", agent: true,
@@ -43,10 +43,10 @@ window.SEED = {
       tags: ["内容生成", "图片", "HR"], owner: "王敏", dept: "人力资源部", date: "2026-07-12",
       env: "零依赖，浏览器双击即用", source: "教练制作回流", status: "已上架",
       reuse: 58, likes: 23, favs: 8, comments: [] },
-    { id: 7, av: "avatars/zhanghao.jpg", rate: 4.7, g: ["#00C7BE","#30B0C7"], ic: "table", name: "门店销售 CSV 汇总工具", type: "网页应用", agent: false,
+    { id: 7, av: "avatars/xiaoli.jpg", rate: 4.7, g: ["#00C7BE","#30B0C7"], ic: "table", name: "门店销售 CSV 汇总工具", type: "网页应用", agent: false,
       desc: "把多个门店的销售 CSV 一键合并成带门店列的总表，自动核对行数与金额合计。",
       usage: "第一步：双击打开工具；第二步：把各门店 CSV 一起拖入；第三步：核对合计后导出总表。",
-      tags: ["数据处理", "CSV", "销售"], owner: "张浩", dept: "产品中心-体验设计部", date: "2026-07-21",
+      tags: ["数据处理", "CSV", "销售"], owner: "小李", dept: "产品中心-体验设计部", date: "2026-07-21",
       env: "零依赖，浏览器双击即用", source: "教练制作回流", status: "已上架",
       reuse: 46, likes: 18, favs: 7, comments: [] },
     { id: 8, av: "avatars/zhoutiancheng.jpg", rate: 4.5, g: ["#5856D6","#3634A3"], ic: "scale", name: "出货对账机器人", type: "脚本", agent: false,
