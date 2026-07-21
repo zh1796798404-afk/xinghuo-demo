@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="flame" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#FFC531"/>
+      <stop offset="0.32" stop-color="#FF7A1F"/>
+      <stop offset="0.75" stop-color="#FA3E1C"/>
+      <stop offset="1" stop-color="#F53B20"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .body { transform-origin: 60px 108px; animation: sway 3.4s ease-in-out infinite; }
+    .spark { transform-origin: 96px 20px; animation: spark 2.6s ease-in-out infinite; }
+    .eyeR { transform-origin: 77px 63px; animation: blink 4.8s ease-in-out infinite; }
+    @keyframes sway {
+      0%, 100% { transform: rotate(-1.6deg) scaleY(1); }
+      30%      { transform: rotate(1.8deg)  scaleY(1.035); }
+      62%      { transform: rotate(-0.7deg) scaleY(0.985); }
+    }
+    @keyframes spark {
+      0%, 100% { transform: translateY(0) scale(1); opacity: 1; }
+      50%      { transform: translateY(-5px) scale(1.15); opacity: .8; }
+    }
+    @keyframes blink {
+      0%, 90%, 100% { transform: scaleY(1); }
+      93%, 96%      { transform: scaleY(0.07); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .body, .spark, .eyeR { animation: none; }
+    }
+  </style>
+  <!-- 右上小火星（漂浮） -->
+  <g class="spark">
+    <path fill="#FA3E1C" d="M97 12 C 102 16, 104 22, 100 26 C 96 29, 90 26, 90 20 C 90 15, 93 11, 97 12 Z"/>
+  </g>
+  <!-- 火焰主体 + 脸（摇曳） -->
+  <g class="body">
+    <path fill="url(#flame)" d="M63 5
+      C 52 20, 60 27, 49 35
+      C 45 27, 43 22, 35 30
+      C 27 38, 31 45, 24 53
+      C 15 64, 13 76, 21 90
+      C 30 105, 52 114, 73 108
+      C 95 101, 108 83, 104 60
+      C 101 44, 90 37, 86 24
+      C 84 31, 79 35, 75 32
+      C 80 21, 71 11, 63 5 Z"/>
+    <!-- 左眼（保持眨眼表情 >） -->
+    <circle cx="44" cy="66" r="15.5" fill="#fff"/>
+    <path d="M37 58 L50 66 L37 74" fill="none" stroke="#111" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- 右眼（周期性眨眼） -->
+    <g class="eyeR">
+      <circle cx="77" cy="63" r="17.5" fill="#fff"/>
+      <circle cx="80" cy="63" r="8" fill="#111"/>
+    </g>
+  </g>
+</svg>
